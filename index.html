@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<title>Happy Holidays</title>
+<script src="happyholidays/js/jquery-1.7.1.min.js"></script>
+<script src="happyholidays/js/jquery.scrollorama.js"></script>
+<script src="happyholidays/js/soundmanager2-nodebug-jsmin.js"></script>
+<script>
+soundManager.setup({
+  url: 'happyholidays/swf/',
+  onready: function() {
+    var mySound = soundManager.createSound({
+      id: 'aSound',
+      url: 'happyholidays/mp3/sleighride.mp3',
+	  stream: true
+    });
+	
+	function loopSound(sound){
+		sound.play({
+			onfinish: function() {
+				loopSound(sound);
+			}
+		});
+	}
+	
+	loopSound(mySound);
+
+  },
+  ontimeout: function() {
+    // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
+  }
+});
+
+
+
+</script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link  rel="stylesheet" type="text/css" href="happyholidays/css/holiday.css">
+
+</head>
+
+<body>
+<div id="loading"><div id="loadingimg"></div></div>
+<div id="page">
+  <div id="background1"  class="scrollblock">
+<div id="speaker"><a href="#" onclick="soundManager.togglePause('aSound');"><img src="happyholidays/images/speaker.png" border ="0"/></a></div>
+    <div id="titlearea"> 
+    	<img id="plane1" src="happyholidays/images/plane1.png" />
+    	<img id="contrail1" src="happyholidays/images/contrail1.png" />
+        <img id="titleClouds" src="happyholidays/images/titleClouds.png" /> 
+        <img id="titleImage" src="happyholidays/images/title.png" /> 
+        <img id="snowFlake1" src="happyholidays/images/snowflake.png" /> 
+        <img id="snowFlake2" src="happyholidays/images/snowflake.png" /> 
+        <img id="snowFlake3" src="happyholidays/images/snowflake.png" /> 
+        <img id="snowFlake4" src="happyholidays/images/snowflake.png" /> 
+        <img id="snowFlake5" src="happyholidays/images/snowflake.png" /> 
+        <img id="snowFlake6" src="happyholidays/images/snowflake.png" /> 
+        <img id="snowFlake7" src="happyholidays/images/snowflake.png" /> 
+        <img id="snowFlake8" src="happyholidays/images/snowflake.png" /> 
+        <img id="snowFlake9" src="happyholidays/images/snowflake.png" /> 
+        <img id="snowFlake10" src="happyholidays/images/snowflake.png" /> 
+        <img id="snowFlake11" src="happyholidays/images/snowflake.png" /> 
+    </div>
+
+    <div id="area10">
+        <img id="plane2" src="happyholidays/images/plane2.png" />
+        <img id="eq1" src="happyholidays/images/equation_airplane.png" />
+    	<img id="contrail2" src="happyholidays/images/contrail2.png" />
+   		 <img id="image10" class="top10image" src="happyholidays/images/10.jpg"/><img id="text10" src="happyholidays/images/10_text.png"/>
+    </div>
+    <div id="area9"><img id="image9" class="top10image" src="happyholidays/images/9.jpg"/><img id="text9" src="happyholidays/images/9_text.png"/></div>
+    <div id="area8"><img id="image8" class="top10image" src="happyholidays/images/8.jpg"/><img id="text8" src="happyholidays/images/8_text.png"/></div>
+    <img id="sledder" src="happyholidays/images/sledder.png" /> 
+    <img id="skater1" src="happyholidays/images/skater1.png" /> 
+    <img id="skater2" src="happyholidays/images/skater2.png" /> 
+    <img id="skater3" src="happyholidays/images/skater3.png" /> 
+    <img id="eq2" src="happyholidays/images/equation_ice-skater.png" />
+    <img id="fox1" src="happyholidays/images/fox1.png" />
+    <img id="fox2" src="happyholidays/images/fox2.png" />
+  </div>
+  <div id="background2"  class="scrollblock">
+    <div id="area7"><img id="image7" class="top10image" src="happyholidays/images/7.jpg"/><img id="text7" src="happyholidays/images/7_text.png"/></div>
+    <div id="area6"><img id="image6" class="top10image" src="happyholidays/images/6.jpg"/><img id="text6" src="happyholidays/images/6_text.png"/></div>
+    <div id="area5"><img id="image5" class="top10image" src="happyholidays/images/5.jpg"/><img id="text5" src="happyholidays/images/5_text.png"/></div>
+    <img id="deer1" src="happyholidays/images/deer1.png" />
+    <img id="deer2" src="happyholidays/images/deer2.png" />
+    <div id="area4"><img id="image4" class="top10image" src="happyholidays/images/4.jpg"/><img id="text4" src="happyholidays/images/4_text.png"/></div>
+    <div id="snowangels">
+    	<img id="snowangel1" src="happyholidays/images/snowangel1.png"/>
+    	<img id="snowangel2" src="happyholidays/images/snowangel2.png"/>
+    	<img id="snowangel3" src="happyholidays/images/snowangel1.png"/>
+    	<img id="snowangel4" src="happyholidays/images/snowangel2.png"/>
+    	<img id="snowangel5" src="happyholidays/images/snowangel1.png"/>
+    	<img id="snowangel6" src="happyholidays/images/snowangel2.png"/>
+    	<img id="snowangel7" src="happyholidays/images/snowangel1.png"/>
+    	<img id="snowangel8" src="happyholidays/images/snowangel2.png"/>
+    </div>
+    <img id="hill" src="happyholidays/images/hill.png"/>
+    <div id="sasq0"><img src="happyholidays/images/sasq0.png" id="sasqimg0"/></div>
+    <div id="sasq1"><img src="happyholidays/images/sasq1.png" id="sasqimg1"/></div>
+    <div id="sasq2"><img src="happyholidays/images/sasq2.png" id="sasqimg2"/></div>
+    <div id="sasq3"><img src="happyholidays/images/sasq3.png" id="sasqimg3"/></div>
+    <div id="sasq4"><img src="happyholidays/images/sasq4.png" id="sasqimg4"/></div>
+    
+    <div id="snowman1"><img src="happyholidays/images/snowman1.png" id="snowmanimg1"/></div>
+    <div id="snowman2"><img src="happyholidays/images/snowman2.png" id="snowmanimg2"/></div>
+    <div id="snowman3"><img src="happyholidays/images/snowman3.png" id="snowmanimg3"/></div>
+    <div id="snowman4"><img src="happyholidays/images/snowman4.png" id="snowmanimg4"/></div>
+    <div id="snowballfight">
+    	<div id="snowballhill"><img src="happyholidays/images/snowballhill.png"/></div>
+        <div id="thrower1-1"><img src="happyholidays/images/thrower1-1.png" id="thrower1-1img"/></div>
+        <div id="thrower1-2"><img src="happyholidays/images/thrower1-2.png" id="thrower1-2img"/></div>
+        <div id="thrower2-1"><img src="happyholidays/images/thrower2-1.png" id="thrower2-1img"/></div>
+        <div id="thrower2-2"><img src="happyholidays/images/thrower2-2.png" id="thrower2-2img"/></div>
+        <div id="snowball1"><img src="happyholidays/images/snowball.png" id="snowball1img"/></div>
+        <div id="snowball2"><img src="happyholidays/images/snowball.png" id="snowball2img"/></div>
+        <div id="eq3"><img src="happyholidays/images/equation_snowball-throw.png"/></div>
+    </div>
+  </div>
+  <div id="background3"  class="scrollblock">
+    <div id="area3"><img id="image3" class="top10image" src="happyholidays/images/3.jpg"/><img id="text3" src="happyholidays/images/3_text.png"/></div>
+    <div id="area2"><img id="image2" class="top10image" src="happyholidays/images/2.jpg"/><img id="text2" src="happyholidays/images/2_text.png"/></div>
+    <div id="area1"><img id="image1" class="top10image" src="happyholidays/images/1.jpg"/><img id="text1" src="happyholidays/images/1_text.png"/></div>
+    <div id="bird1"><img id="bird1img" src="happyholidays/images/bird1.png"/></div>
+    <div id="bird2"><img id="bird2img" src="happyholidays/images/bird2.png"/></div>
+    <div id="bird3"><img id="bird3img" src="happyholidays/images/bird3.png"/></div>
+    <div id="bird4"><img id="bird4img" src="happyholidays/images/bird2.png"/></div>
+    <div id="bird5"><img id="bird5img" src="happyholidays/images/bird3.png"/></div>
+    <div id="bird6"><img id="bird6img" src="happyholidays/images/bird2.png"/></div>
+    <div id="lights"><img src="happyholidays/images/lights.png"/></div>
+    <div id="happy"><img src="happyholidays/images/happy.png"/></div>
+    <div id="holidays"><img src="happyholidays/images/holidays.png"/></div>
+    <div id="shoveler">
+    	<div id="shovel1"></div>
+    	<div id="shovel2"><img id="shovel2img" src="happyholidays/images/shovel2.png"/></div>
+    	<img src="happyholidays/images/bottomRibbons.png"/>
+<div id="shovel4"><img id="shovel4img" src="happyholidays/images/shovel2.png"/></div>
+    	<div id="shovel5"><img id="shovel5img" src="happyholidays/images/shovel1.png"/></div>
+    </div>
+     <div id="messageHeading">Colleagues, Alumni and Friends</div>
+     <div id="message"><p>Best Wishes  for a Wonderful Holiday Season and a Happy New Year.</p>
+     <p>From your friends at<br /> College & Community Relations, Development and Marketing & Communications<br /></p>
+     </div>
+    <div id="familyImgArea">
+     <img id="familyImg" src="happyholidays/images/family.png"/>
+     </div>
+     <div id="bottomRibbons"></div><br />
+     
+<br />
+    <div id="sig"><img src="happyholidays/images/sig.png"/></div>
+     <div id="subsig"></div>
+  </div>
+</div>
+<script type="text/javascript" src="happyholidays/js/animate.js"></script>
+</body>
+</html>
